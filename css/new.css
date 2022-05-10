@@ -1,0 +1,285 @@
+/* General Styles */
+html,
+body {
+    height:100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #453E4F;
+    font-weight: 100;
+}
+
+#home-portfolio {
+    background-color: #eee7e1;
+}
+
+#about {
+    background-color: #eee7e1;
+}
+
+#work {
+    background-color: black;
+    color: white;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+/* -------------------- Homepage -------------------- */
+/* header / footer */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 0px 10px;
+    width: 95%;
+}
+
+.ha a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    color: #453E4F;
+    font-weight: 400;
+}
+
+.ha a:hover {
+    font-style: italic;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+header nav ul li a {
+    color: #453E4F;
+}
+
+footer {
+    text-align: center;
+    font-size: .7em;
+    position: sticky;
+    top: 100%;
+}
+
+
+/* Home Page */
+.home-content {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    padding: 55px 0 0 25px;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    align-items: flex-end;
+}
+
+.title h1 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #453E4F;
+}
+
+.title h2 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.menu-link {
+    position: relative;
+    z-index: 100;
+    width: 65%;
+    display: block;
+    text-align: left;
+    left: auto;
+    flex-direction: column;
+    font-size: 14vw;
+    text-transform: uppercase;
+    color: #453E4F;
+    padding: 10px;
+    font-family: 'Cormorant', serif;
+}
+
+.menu-link:hover {
+    font-style: italic;
+}
+
+
+/* work */
+#work header nav ul li a {
+    color: #eee7e1;
+}
+
+#work header .ha a {
+    color: #eee7e1;
+}
+
+.work-container h1 {
+    text-align: center;
+    font-weight: 100;
+    color: #eee7e1;
+    font-size: 2em;
+}
+
+.work-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.container {
+    padding: 10px 10px;
+    display: block;
+    justify-content: center;
+    width: 100%;
+}
+
+.container h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.project-description {
+    font-size: .9em;
+    width: 80%;
+}
+
+.work-link {
+    position: relative;
+    z-index: 100;
+    display: block;
+    text-align: left;
+    flex-direction: column;
+    font-size: 4vw;
+    text-transform: uppercase;
+    color: #eee7e1;
+    font-family: 'Cormorant', serif;
+
+}
+
+.work-link:hover {
+    font-style: italic;
+}
+
+/* about */
+
+.about-content img {
+    position: absolute;
+    left: auto;
+    top: 9%;
+    right: 0%;
+    bottom: 0%;
+    display: block;
+    width: 40%;
+    max-width: 200px;
+}
+
+.profile-title {
+    padding: 0 5%;
+}
+.profile {
+    padding: 3% 5%;
+}
+
+.profile-title h2 {
+    font-family: 'cormorant', serif;
+    font-size: 4em;
+    font-weight: 400;
+    margin: 28px 0;
+}
+
+.profile-title h3 {
+    font-family: 'Cormorant', serif;
+    font-size: 2em;
+    margin: 0;
+    text-align: left;
+    width: 70%;
+    margin: 10px 0;
+}
+
+.profile-title h4 {
+    font-family: 'Cormorant', serif;
+    font-size: 1em;
+    margin: 0;
+    text-align: left;
+    font-style: italic;
+    width: 62%;
+}
+
+.profile p {
+    text-align: left;
+    max-width: 800px;
+    font-size: .8em;
+}
+
+.skills,
+.email {
+    word-spacing: 4px;
+}
+
+.profile p span {
+    font-family: 'Cormorant', serif;
+    font-weight: bold;
+    font-size: 1.2em;  
+    text-transform: uppercase;
+}
+
+.email {
+    font-size: .8em;
+}
+
+.email a {
+    text-transform: uppercase;
+    color: #453E4F;
+}
+    
+.email a:hover {
+    font-style: italic;
+}
+
+
+@media only screen and (min-width:768px) {
+    /*Tablet styles here*/
+
+    footer {
+        position: sticky;
+        top: 100%;
+    }
+}
